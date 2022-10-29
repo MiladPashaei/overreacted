@@ -2,12 +2,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, 'Merriweather','Georgia',serif;
+  font-family: Montserrat, 'Merriweather','Georgia',serif,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  transition: background 0.4s;
 }
 
 a {
@@ -27,4 +28,8 @@ a {
     color: white;
     background: black;
   }
+}
+
+.react-toggle-track{
+  background-color: black !important;
 }

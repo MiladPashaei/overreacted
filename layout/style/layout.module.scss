@@ -21,11 +21,11 @@
     hr {
       color: rgba(0, 0, 0, 0.2);
     }
+    
   }
   .dark {
     @extend .layout;
     background-color: #282c35;
-  
     color: hsla(0, 0%, 100%, 0.88);
     h1 {
       color: #fff;
@@ -48,10 +48,17 @@
     justify-content: space-between;
     align-items: center;
     width: 30%;
+    margin-bottom: 2.625rem;
   }
-  .main-header {
+  .main_header {
     font-family: Montserrat,sans-serif;
     font-weight: 900;
     text-rendering: optimizeLegibility;
+  }
+  .post_header{
+    font-family: Montserrat,sans-serif;
+    box-shadow: none;
+    text-decoration: none;
+    color: rgb(255, 167, 196) !important;
   }
   

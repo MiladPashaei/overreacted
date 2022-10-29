@@ -6,6 +6,7 @@ import {  changeToDark, themeValue } from "../store/themeSlice";
 import styles from "./style/layout.module.scss";
 import { useRouter } from "next/router";
 import { ThemeToggle } from "../components/themeToggle/ThemeToggle";
+import Link from "next/link";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,12 +17,7 @@ const Layout: NextPage<LayoutProps> = ({ children, ...props }) => {
   const dispatch = useAppDispatch();
 
   const router = useRouter();
-  useEffect(() => {
-    const now = new Date();
-    if (now.getHours() > 16) {
-      dispatch(changeToDark());
-    }
-  }, []);
+ 
 
   return (
     <div className={styles[theme]}>
@@ -29,17 +25,21 @@ const Layout: NextPage<LayoutProps> = ({ children, ...props }) => {
         <title>Overreacted - A blog by Dan Abramov</title>
         <meta name="description" content="A blog by Dan Abramov" />
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
       <header className={styles["header"]}>
-        <h1
-          className={
-            router.pathname === "/"
-              ? styles["main_header"]
-              : styles["post_header"]
-          }
-        >
-          OverReacted
-        </h1>
+        <Link href="/">
+          <h1
+            className={
+              router.pathname === "/"
+                ? styles["main_header"]
+                : styles["post_header"]
+            }
+          >
+            
+            Overreacted
+          </h1>
+        </Link>
         <ThemeToggle />
       </header>
       <main className={styles.main}>

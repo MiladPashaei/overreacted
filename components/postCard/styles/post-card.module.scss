@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3rem;
+    h3{
+        color: #d23669;
+        font-family: Montserrat, sans-serif !important;
+        font-weight: 900;
+        text-rendering: optimizeLegibility;
+        font-size: 1.4427rem;
+        line-height: 1.1;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.75rem;
+        margin-bottom: 0.4375rem;
+    }
+    p{
+        margin:4px 0;
+    }
+    
+}
+.info{
+    display: flex;
+    gap:8px;
+    font-size:80%
+}

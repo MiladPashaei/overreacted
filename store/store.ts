@@ -1,9 +1,10 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit";
 import themeReducer from "./themeSlice";
-
+import postReducer from "./postDataStore"
 const store =configureStore({
     reducer:{
-        theme: themeReducer
+        theme: themeReducer,
+        posts: postReducer
     }
 })
 

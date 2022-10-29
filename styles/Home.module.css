@@ -127,3 +127,28 @@
     filter: invert(1);
   }
 }
+
+
+.profile{
+  display: flex;
+  gap:16px;
+  
+}
+.profile-text{
+  width: 50%;
+  
+}
+.profile-text a {
+  box-shadow: 0 1px 0 0 currentColor;
+  color: #d23669;
+  text-decoration: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.75rem;
+  max-width: 310px;
+}
